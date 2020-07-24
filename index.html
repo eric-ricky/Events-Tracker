@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Events Tracking App</title>
+</head>
+<body onload="fetchEvents()">
+
+    <div class="container">
+        <div class="section-1">
+            <h1 class="heading">Events Tracking App</h1>
+            <div class="input_container">
+                <h3>Add New Event</h3>
+                <form id="inputForm">
+                    <label for="description">Event</label><br>
+                    <input type="text" class="form-control" id="eventInput" placeholder="What are you going to do...">
+                    <br>
+                    <label class="label" for="startingtime">Starting Time</label><br>
+                    <input type="text" class="form-control" id="eventTimeInput" placeholder="Event Starting Time...">
+                    <br>
+                    <button id="submitBtn" class="btn" type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="col col-12">
+                <div id="issuesList" class="issuesList">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;RickyDev.com</p>
+        </div>
+    </div>
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

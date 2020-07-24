@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+/* Utilities */
+.col {
+    float: left;
+}
+.col-12 {width: 100%;}
+.col-6 {width: 50%;}
+.col-3 {width: 25%;}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    border: transparent;
+    outline: none;
+    font-size: 1.3rem;
+    background: #11c;
+    color: #ccc;
+    transition: ease-in .5s;
+}
+.btn-red {background-color: red;}
+.btn:hover {
+    background: #115;
+    color: #fff;
+}
+
+/* section 1 */
+.heading {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading small {
+    font-size: 1.7rem;
+    color: #999;
+}
+.input_container {
+    margin-top: 1rem;
+    background: #999;
+    padding: 2.3rem 2rem;
+    border-radius: 0.5rem;
+}
+.input_container h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.form-control {
+    width: 50%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border-color: transparent;
+    font-size: 1.2rem;
+}
+label {
+    margin: 5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* section 2 */
+.issuesList {
+    margin-top: 2rem;
+}
+.issueItem {
+    padding: 2rem 1rem;
+    background: #ddd;
+    margin: 1.2rem 0;
+    line-height: 1.4;
+    border-radius: 0.7rem;
+}
+.issueItem.dull {
+    opacity: 0.5;
+}
+.issueItem h6 {
+    font-size: 1.3rem;
+}
+.status span {
+    font-size: 1rem;
+    padding: .1rem .4rem;
+}
+.issueItem h3 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+.issueItem .statCont {
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.issueItem .icon , .issueItem .iconp{
+    margin-right: .4rem;
+}
+.issueItem a {
+    padding: 0.71rem 1rem;
+}
+.issueItem a {margin-right: 1rem;}
+
+
+/* footer */
+.footer {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+    .container {max-width: 300px;}
+    .heading {font-size: 1.7rem;}
+    .input_container {padding: 1.3rem 0.7rem;}
+    .input_container h3 {font-size: 1.1rem;}
+    label {font-size: 1rem;}
+    .form-control {padding: 0; font-size: 1rem; width: 100%;}
+    .btn {padding: 0.5rem;border-radius: 0.7rem;}
+}
